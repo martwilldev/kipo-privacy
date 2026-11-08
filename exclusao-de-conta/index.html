@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusão de Conta e Dados — Kipo Android (app.kipo.android)</title>
+  <meta name="description" content="Instruções oficiais para exclusão de conta e exclusão parcial ou total de dados do aplicativo Kipo Android (app.kipo.android), conforme exigido pela Google Play Store." />
+  <meta name="theme-color" content="#234E43" />
+  <style>
+    :root {
+      --kipo-brand-primary: #234E43;
+      --kipo-brand-primary-container: #E0EFEA;
+      --kipo-brand-on-primary: #FFFFFF;
+      --kipo-background: #F6F4EE;
+      --kipo-surface: #FFFFFF;
+      --kipo-surface-elevated: #F0EDE4;
+      --kipo-text-primary: #18221F;
+      --kipo-text-secondary: #4E5B56;
+      --kipo-text-muted: #788580;
+      --kipo-border: #E2DDD2;
+      --kipo-radius-card: 16px;
+      --kipo-radius-chip: 999px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --kipo-brand-primary: #6EE7B7;
+        --kipo-brand-primary-container: #1B382F;
+        --kipo-brand-on-primary: #081C15;
+        --kipo-background: #0B1210;
+        --kipo-surface: #14201C;
+        --kipo-surface-elevated: #1E2E29;
+        --kipo-text-primary: #EFF5F3;
+        --kipo-text-secondary: #9CB0A9;
+        --kipo-text-muted: #687D76;
+        --kipo-border: #233630;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--kipo-background);
+      color: var(--kipo-text-primary);
+      line-height: 1.65;
+      padding: 24px 16px 64px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--kipo-border);
+      margin-bottom: 28px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--kipo-text-primary);
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #234E43, #14B8A6);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 18px;
+      display: grid;
+      place-items: center;
+    }
+    .badge {
+      display: inline-block;
+      background-color: var(--kipo-brand-primary-container);
+      color: var(--kipo-brand-primary);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--kipo-radius-chip);
+    }
+    article {
+      background-color: var(--kipo-surface);
+      border: 1px solid var(--kipo-border);
+      border-radius: var(--kipo-radius-card);
+      padding: 32px 28px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--kipo-text-muted);
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--kipo-border);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--kipo-text-primary);
+    }
+    p {
+      color: var(--kipo-text-secondary);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    ol, ul {
+      padding-left: 20px;
+      color: var(--kipo-text-secondary);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .step-box {
+      background-color: var(--kipo-surface-elevated);
+      border: 1px solid var(--kipo-border);
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background-color: var(--kipo-surface-elevated);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    a {
+      color: var(--kipo-brand-primary);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      color: var(--kipo-text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../" class="brand">
+        <div class="logo">K</div>
+        <div>
+          <strong>Kipo Android</strong>
+          <div style="font-size: 12px; color: var(--kipo-text-muted);">← Voltar para a Central de Privacidade</div>
+        </div>
+      </a>
+      <span class="badge">Google Play Data Safety</span>
+    </header>
+
+    <article>
+      <h1>Exclusão de Conta e Dados do Usuário</h1>
+      <div class="meta">
+        <strong>Aplicativo:</strong> Kipo — Fichário Digital Pessoal e Familiar (Pacote Android: <code>app.kipo.android</code>)<br />
+        <strong>Desenvolvedor:</strong> Kipo (martwilldev)
+      </div>
+
+      <p>
+        Em conformidade com a política de <strong>Segurança dos Dados (Data Safety) da Google Play Store</strong> e o Art. 18 da <strong>LGPD</strong>, você pode solicitar a exclusão completa da sua conta Kipo ou a exclusão parcial de itens e arquivos específicos a qualquer momento.
+      </p>
+
+      <h2>1. Como Excluir Sua Conta Completa</h2>
+
+      <div class="step-box">
+        <strong>Opção A — Diretamente dentro do aplicativo Kipo Android:</strong>
+        <ol style="margin-top: 10px; margin-bottom: 0;">
+          <li>Abra o aplicativo <strong>Kipo</strong> no seu celular Android.</li>
+          <li>Na tela inicial (<em>Meus Fichários</em>), toque no ícone de <strong>Configurações / Conta</strong> no canto superior direito.</li>
+          <li>Role até a seção <strong>Conta &amp; Privacidade</strong> e toque em <strong>Excluir Minha Conta Definitivamente</strong>.</li>
+          <li>Confirme a operação. Seu cache local (Room SQLite) será limpo na hora e sua conta será encerrada.</li>
+        </ol>
+      </div>
+
+      <div class="step-box">
+        <strong>Opção B — Pela Web (sem precisar abrir ou reinstalar o aplicativo):</strong>
+        <ol style="margin-top: 10px; margin-bottom: 0;">
+          <li>Caso já tenha desinstalado o aplicativo, você pode solicitar a exclusão abrindo um chamado de exclusão de dados em <a href="https://github.com/martwilldev" target="_blank" rel="noopener">github.com/martwilldev</a> ou enviando uma solicitação com o assunto <code>[Exclusão de Conta Kipo]</code> a partir do mesmo endereço de e-mail vinculado ao seu login Google/Apple.</li>
+          <li>Confirmaremos a titularidade do e-mail e processaremos a exclusão completa em até <strong>7 dias úteis</strong>.</li>
+        </ol>
+      </div>
+
+      <h2>2. Como Excluir Dados Parciais (Sem Excluir a Conta)</h2>
+      <p>Se você deseja continuar usando o Kipo, mas quer apagar links, notas, fotos, PDFs ou Fichários específicos:</p>
+      <ul>
+        <li><strong>Excluir um Item (Link, Nota, Foto, Áudio ou PDF):</strong> dentro da Divisória, toque no menu <code>⋯</code> do cartão do item e selecione <strong>🗑️ Excluir</strong>.</li>
+        <li><strong>Excluir uma Divisória ou Fichário inteiro:</strong> abra as opções da Divisória ou do Fichário (como proprietário <code>Owner</code>) e selecione <strong>Excluir</strong>.</li>
+      </ul>
+
+      <h2>3. O que é Excluído e Prazos de Retenção</h2>
+      <ul>
+        <li><strong>Dados excluídos permanentemente:</strong> Perfil do usuário (nome, e-mail, foto OAuth), todos os Fichários exclusivos do usuário, Divisórias, Itens, notas de texto (<code>TextNote</code>), resumos de IA (<code>CachedSummary</code>), lembretes agendados, tokens de notificação push (FCM) e todos os arquivos/miniaturas armazenados no bucket S3.</li>
+        <li><strong>Prazo da Lixeira (30 dias):</strong> Itens apagados entram em estado de exclusão lógica (<em>Soft Delete</em>) por até <strong>30 dias</strong> para recuperação contra exclusão acidental e são permanentemente expurgados do banco de dados e do armazenamento S3 após esse prazo (ou imediatamente no caso de exclusão de conta completa).</li>
+        <li><strong>Fichários Compartilhados com a Família:</strong> Se você for o criador (<code>Owner</code>) de um Fichário compartilhado com outros familiares ativos, você poderá transferir a titularidade para outro membro antes de excluir sua conta, ou optar por encerrar o Fichário inteiro.</li>
+      </ul>
+
+      <h2>4. English Instructions (Account &amp; Data Deletion)</h2>
+      <p>
+        Users of <strong>Kipo Android (<code>app.kipo.android</code>)</strong> can delete their account and all associated personal data at any time:
+      </p>
+      <ul>
+        <li><strong>In-App:</strong> Open Kipo &rarr; tap <em>Settings / Account</em> (top right) &rarr; select <em>Delete My Account Permanently</em>.</li>
+        <li><strong>Web Request (without the app installed):</strong> Submit a deletion request via <a href="https://github.com/martwilldev" target="_blank" rel="noopener">github.com/martwilldev</a> using the email address associated with your Kipo account. All personal profile data, binders, topics, items, S3 media files, and push tokens are permanently purged within 30 days.</li>
+      </ul>
+    </article>
+
+    <footer>
+      <span>© 2026 Kipo (martwilldev). Todos os direitos reservados.</span>
+      <span>
+        <a href="../" style="color: inherit; margin-right: 12px;">Início</a>
+        <a href="../privacidade/" style="color: inherit;">Política de Privacidade</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>

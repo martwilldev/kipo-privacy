@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Kipo Android (app.kipo.android)</title>
+  <meta name="description" content="Política de Privacidade oficial do aplicativo Kipo para Android (app.kipo.android), em conformidade com a Google Play Store e a LGPD (Lei nº 13.709/2018)." />
+  <meta name="theme-color" content="#234E43" />
+  <style>
+    :root {
+      --kipo-brand-primary: #234E43;
+      --kipo-brand-primary-container: #E0EFEA;
+      --kipo-brand-on-primary: #FFFFFF;
+      --kipo-background: #F6F4EE;
+      --kipo-surface: #FFFFFF;
+      --kipo-surface-elevated: #F0EDE4;
+      --kipo-text-primary: #18221F;
+      --kipo-text-secondary: #4E5B56;
+      --kipo-text-muted: #788580;
+      --kipo-border: #E2DDD2;
+      --kipo-radius-card: 16px;
+      --kipo-radius-chip: 999px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --kipo-brand-primary: #6EE7B7;
+        --kipo-brand-primary-container: #1B382F;
+        --kipo-brand-on-primary: #081C15;
+        --kipo-background: #0B1210;
+        --kipo-surface: #14201C;
+        --kipo-surface-elevated: #1E2E29;
+        --kipo-text-primary: #EFF5F3;
+        --kipo-text-secondary: #9CB0A9;
+        --kipo-text-muted: #687D76;
+        --kipo-border: #233630;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--kipo-background);
+      color: var(--kipo-text-primary);
+      line-height: 1.65;
+      padding: 24px 16px 64px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--kipo-border);
+      margin-bottom: 28px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--kipo-text-primary);
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #234E43, #14B8A6);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 18px;
+      display: grid;
+      place-items: center;
+    }
+    .badge {
+      display: inline-block;
+      background-color: var(--kipo-brand-primary-container);
+      color: var(--kipo-brand-primary);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--kipo-radius-chip);
+    }
+    article {
+      background-color: var(--kipo-surface);
+      border: 1px solid var(--kipo-border);
+      border-radius: var(--kipo-radius-card);
+      padding: 32px 28px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--kipo-text-muted);
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--kipo-border);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--kipo-text-primary);
+    }
+    p {
+      color: var(--kipo-text-secondary);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 20px;
+      color: var(--kipo-text-secondary);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid var(--kipo-border);
+    }
+    th {
+      background-color: var(--kipo-surface-elevated);
+      font-weight: 700;
+    }
+    td {
+      color: var(--kipo-text-secondary);
+    }
+    .callout {
+      background-color: var(--kipo-surface-elevated);
+      border-left: 4px solid var(--kipo-brand-primary);
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14.5px;
+      color: var(--kipo-text-secondary);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background-color: var(--kipo-surface-elevated);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    a {
+      color: var(--kipo-brand-primary);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      color: var(--kipo-text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../" class="brand">
+        <div class="logo">K</div>
+        <div>
+          <strong>Kipo Android</strong>
+          <div style="font-size: 12px; color: var(--kipo-text-muted);">← Voltar para a Central de Privacidade</div>
+        </div>
+      </a>
+      <span class="badge">LGPD &amp; Google Play Policy</span>
+    </header>
+
+    <article>
+      <h1>Política de Privacidade do Kipo</h1>
+      <div class="meta">
+        <strong>Aplicativo:</strong> Kipo — Fichário Digital Pessoal e Familiar (Pacote Android: <code>app.kipo.android</code>)<br />
+        <strong>Última atualização:</strong> 08 de novembro de 2026 &bull; <strong>Vigência:</strong> Imediata
+      </div>
+
+      <p>
+        Esta Política de Privacidade descreve de forma transparente como o aplicativo <strong>Kipo</strong> (identificado na Google Play Store pelo pacote <code>app.kipo.android</code> e desenvolvido por <strong>martwilldev</strong>) coleta, utiliza, armazena, protege e compartilha informações pessoais, em estrita conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018)</strong> e com as diretrizes de Segurança de Dados da <strong>Google Play Store</strong>.
+      </p>
+
+      <h2>1. Dados que Coletamos e Finalidades</h2>
+      <p>O Kipo coleta exclusivamente o mínimo de dados necessários para oferecer a organização pessoal e familiar em Fichários e Divisórias:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Categoria de Dado</th>
+            <th>Exemplos</th>
+            <th>Finalidade &amp; Base Legal (LGPD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Dados de Conta e Autenticação</strong></td>
+            <td>Nome de exibição, endereço de e-mail e foto de perfil (via Google Sign-In / OAuth).</td>
+            <td>Identificar o usuário nos Fichários próprios e compartilhados com a família (Execução de Contrato — Art. 7º, V).</td>
+          </tr>
+          <tr>
+            <td><strong>Conteúdos Salvos pelo Usuário</strong></td>
+            <td>Links compartilhados, notas de texto, fotos, vídeos, áudios e documentos PDF enviados voluntariamente nos Fichários e Divisórias.</td>
+            <td>Armazenar, sincronizar em tempo real entre dispositivos da família e disponibilizar na Galeria Visual e no cache offline (Execução de Contrato — Art. 7º, V).</td>
+          </tr>
+          <tr>
+            <td><strong>Identificadores de Notificação Push</strong></td>
+            <td>Token de registro do Firebase Cloud Messaging (FCM).</td>
+            <td>Entregar lembretes agendados pelo próprio usuário ou por membros do seu Fichário Familiar (Execução de Contrato — Art. 7º, V).</td>
+          </tr>
+          <tr>
+            <td><strong>Diagnósticos Técnicos Mínimos</strong></td>
+            <td>Versão do app, código de erro HTTP e latência (sem conteúdo de notas ou PII nos logs).</td>
+            <td>Garantir estabilidade, segurança e prevenção a fraudes ou abusos (Legítimo Interesse — Art. 7º, IX).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>2. Permissões do Sistema Android Utilizadas</h2>
+      <ul>
+        <li><code>android.permission.INTERNET</code> e <code>android.permission.ACCESS_NETWORK_STATE</code>: necessárias para sincronizar Fichários, Divisórias e Itens com o servidor Kipo (HTTPS/TLS 1.3 e WebSockets SignalR) e detectar quando o aparelho entra em Modo Offline Somente Leitura.</li>
+        <li><code>android.permission.POST_NOTIFICATIONS</code> (opcional, mediante permissão do usuário): utilizada exclusivamente para exibir alertas de lembretes agendados pelo usuário nos seus itens.</li>
+        <li><strong>Menu Compartilhar do Android (<code>Intent.ACTION_SEND</code>):</strong> a atividade <code>ShareReceiverActivity</code> recebe apenas o link ou arquivo que você escolheu compartilhar manualmente a partir de outros aplicativos (como Instagram, YouTube, TikTok, Facebook ou navegador).</li>
+        <li><strong>Zero Coleta de Localização:</strong> o manifesto do Kipo bloqueia e remove explicitamente as permissões <code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code> e <code>ACCESS_BACKGROUND_LOCATION</code>. O Kipo não rastreia sua localização geográfica.</li>
+      </ul>
+
+      <h2>3. Inteligência Artificial 100% Sob Demanda e Não-Treinamento</h2>
+      <div class="callout">
+        <strong>Compromisso de IA Sob Demanda:</strong> O Kipo realiza <strong>zero chamadas automáticas de Inteligência Artificial Generativa em segundo plano</strong> quando você salva um link ou nota.
+      </div>
+      <ul>
+        <li><strong>Acionamento Explícito:</strong> Seus itens só são enviados para processamento de resumo ou síntese quando você toca deliberadamente nos botões <em>"✨ Resumir com IA"</em>, <em>"Síntese da Divisória"</em> ou interage com o assistente <em>Kipo Agent</em>.</li>
+        <li><strong>Não-Treinamento de Modelos:</strong> Os conteúdos enviados sob demanda são processados via APIs comerciais (ou pela sua própria chave/assinatura no modo <em>BYOS — Bring Your Own Subscription</em>) sob política de não utilização de dados de clientes para treinamento de modelos fundacionais.</li>
+      </ul>
+
+      <h2>4. Higienização de URLs, Armazenamento Cloud e Cache Offline</h2>
+      <ul>
+        <li><strong>Remoção de Rastreadores:</strong> Ao salvar qualquer link externo no Kipo, nosso sistema higieniza automaticamente parâmetros invasivos de rastreamento publicitário (como <code>utm_*</code>, <code>igsh</code>, <code>si</code> e <code>fbclid</code>).</li>
+        <li><strong>Capas Eternas e Armazenamento Criptografado:</strong> Mídias enviadas e miniaturas de links são armazenadas em bucket de objetos S3 isolado com comunicação criptografada em trânsito (HTTPS/TLS 1.3) e controle estrito de acesso por membro do Fichário.</li>
+        <li><strong>Cache Local Offline (Room SQLite):</strong> Para permitir que você consulte seus Fichários sem internet (no avião, mercado ou obra sem sinal), o aplicativo mantém uma cópia local somente leitura no armazenamento interno privado e protegido pelo sandbox do Android. Ao sair da sua conta (Logout) ou desinstalar o app, esse cache local é integralmente limpo.</li>
+      </ul>
+
+      <h2>5. Privacidade entre Fichários e Compartilhamento Familiar</h2>
+      <ul>
+        <li><strong>Isolamento Estrito:</strong> Apenas usuários convidados que ingressaram com o código de convite de 8 caracteres (ou que foram aprovados pelo dono do Fichário) têm acesso aos itens daquele Fichário.</li>
+        <li><strong>Encaminhamento Limpo (<em>Clean Forward</em>):</strong> Ao encaminhar um item de um Fichário para outro, o Kipo cria uma cópia limpa contendo apenas o link ou arquivo bruto, sem jamais vazar anotações privadas, comentários ou histórico de quem salvou originalmente.</li>
+        <li><strong>Sem Venda de Dados:</strong> Não vendemos, alugamos nem compartilhamos seus dados pessoais com redes de anúncios ou corretores de dados. Pagamentos de planos opcionais são processados diretamente por gateways certificados (Stripe / Pix), sem armazenamento de dados de cartão de crédito nos servidores do Kipo.</li>
+      </ul>
+
+      <h2 id="exclusao-de-conta">6. Retenção, Lixeira de 30 Dias e Exclusão de Conta e Dados</h2>
+      <ul>
+        <li><strong>Lixeira de 30 Dias (<em>Soft Delete</em>):</strong> Itens excluídos individualmente ficam na Lixeira por 30 dias para evitar perdas acidentais, sendo permanentemente expurgados do banco de dados e do armazenamento S3 após esse período.</li>
+        <li><strong>Exclusão Definitiva de Conta e Dados:</strong> Você pode solicitar a exclusão total da sua conta e de todos os seus dados pessoais a qualquer momento, diretamente pelo aplicativo ou pela nossa página dedicada: <a href="../exclusao-de-conta/">Instruções de Exclusão de Conta e Dados do Kipo</a>.</li>
+      </ul>
+
+      <h2>7. Direitos do Titular (Art. 18 da LGPD) e Contato</h2>
+      <p>
+        Você possui o direito de solicitar confirmação de tratamento, acesso, correção, portabilidade, anonimização e eliminação dos seus dados pessoais. Para exercer seus direitos ou esclarecer dúvidas sobre esta Política de Privacidade, entre em contato pelo canal de suporte do repositório oficial no GitHub (<a href="https://github.com/martwilldev" target="_blank" rel="noopener">github.com/martwilldev</a>) ou consulte as instruções em <a href="../exclusao-de-conta/">Exclusão de Conta e Dados</a>.
+      </p>
+
+      <h2>8. English Summary (For Google Play Reviewers)</h2>
+      <p>
+        <strong>Kipo Android (<code>app.kipo.android</code>)</strong> is a personal and family digital binder app. We only collect account profile data (name, email via Google OAuth), user-saved items (links, notes, photos, PDFs), and FCM push tokens for user-scheduled reminders. We do <strong>not</strong> collect location data, we do <strong>not</strong> display third-party ads or sell user data, and AI summarization is strictly on-demand (triggered only by explicit user action). Users can delete individual items or permanently delete their entire account and associated data at any time via the in-app settings or at our <a href="../exclusao-de-conta/">Account &amp; Data Deletion page</a>.
+      </p>
+    </article>
+
+    <footer>
+      <span>© 2026 Kipo (martwilldev). Todos os direitos reservados.</span>
+      <span>
+        <a href="../" style="color: inherit; margin-right: 12px;">Início</a>
+        <a href="../exclusao-de-conta/" style="color: inherit;">Exclusão de Conta</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>

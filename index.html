@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kipo Android — Central de Privacidade, Segurança de Dados & Termos (Google Play)</title>
+  <meta name="description" content="Central oficial de Privacidade, Segurança de Dados (Google Play Data Safety) e Exclusão de Conta do aplicativo nativo Kipo para Android (app.kipo.android)." />
+  <meta name="theme-color" content="#234E43" />
+  <style>
+    :root {
+      --kipo-brand-primary: #234E43;
+      --kipo-brand-primary-container: #E0EFEA;
+      --kipo-brand-on-primary: #FFFFFF;
+      --kipo-background: #F6F4EE;
+      --kipo-surface: #FFFFFF;
+      --kipo-surface-elevated: #F0EDE4;
+      --kipo-text-primary: #18221F;
+      --kipo-text-secondary: #4E5B56;
+      --kipo-text-muted: #788580;
+      --kipo-border: #E2DDD2;
+      --kipo-status-resolved-bg: #DCFCE7;
+      --kipo-status-resolved-fg: #166534;
+      --kipo-radius-card: 16px;
+      --kipo-radius-chip: 999px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --kipo-brand-primary: #6EE7B7;
+        --kipo-brand-primary-container: #1B382F;
+        --kipo-brand-on-primary: #081C15;
+        --kipo-background: #0B1210;
+        --kipo-surface: #14201C;
+        --kipo-surface-elevated: #1E2E29;
+        --kipo-text-primary: #EFF5F3;
+        --kipo-text-secondary: #9CB0A9;
+        --kipo-text-muted: #687D76;
+        --kipo-border: #233630;
+        --kipo-status-resolved-bg: #064E3B;
+        --kipo-status-resolved-fg: #6EE7B7;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--kipo-background);
+      color: var(--kipo-text-primary);
+      line-height: 1.6;
+      padding: 24px 16px 64px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--kipo-border);
+      margin-bottom: 32px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--kipo-text-primary);
+    }
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #234E43, #14B8A6);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 20px;
+      display: grid;
+      place-items: center;
+    }
+    .badge {
+      display: inline-block;
+      background-color: var(--kipo-brand-primary-container);
+      color: var(--kipo-brand-primary);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--kipo-radius-chip);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      color: var(--kipo-text-secondary);
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .card {
+      background-color: var(--kipo-surface);
+      border: 1px solid var(--kipo-border);
+      border-radius: var(--kipo-radius-card);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .card h2 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .card p {
+      color: var(--kipo-text-secondary);
+      font-size: 14.5px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background-color: var(--kipo-brand-primary);
+      color: var(--kipo-brand-on-primary);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 18px;
+      border-radius: var(--kipo-radius-chip);
+      align-self: flex-start;
+    }
+    .highlights {
+      background-color: var(--kipo-surface);
+      border: 1px solid var(--kipo-border);
+      border-radius: var(--kipo-radius-card);
+      padding: 24px;
+    }
+    .highlights h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .highlights ul {
+      padding-left: 20px;
+      color: var(--kipo-text-secondary);
+      font-size: 14.5px;
+    }
+    .highlights li {
+      margin-bottom: 8px;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--kipo-border);
+      font-size: 13px;
+      color: var(--kipo-text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background-color: var(--kipo-surface-elevated);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="./" class="brand">
+        <div class="logo">K</div>
+        <div>
+          <strong>Kipo Android</strong>
+          <div style="font-size: 12px; color: var(--kipo-text-muted);">Pacote: <code>app.kipo.android</code></div>
+        </div>
+      </a>
+      <span class="badge">Google Play Compliance &amp; LGPD</span>
+    </header>
+
+    <main>
+      <h1>Central de Privacidade e Segurança de Dados</h1>
+      <p class="lead">
+        O <strong>Kipo</strong> é o fichário digital pessoal e familiar simples como o WhatsApp, organizado em Divisórias e com Galeria Visual de Capas Eternas em 1 toque. Abaixo estão os documentos oficiais exigidos pela <strong>Google Play Store</strong> e pela <strong>LGPD (Lei nº 13.709/2018)</strong>.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div>
+            <span class="badge" style="margin-bottom: 10px;">Documento Oficial</span>
+            <h2>🔒 Política de Privacidade</h2>
+            <p>
+              Detalha quais dados são tratados pelo aplicativo Android (<code>app.kipo.android</code>), permissões de sistema utilizadas, armazenamento criptografado, IA 100% sob demanda e direitos do titular.
+            </p>
+          </div>
+          <a class="btn" href="./privacidade/">Ler Política de Privacidade →</a>
+        </div>
+
+        <div class="card">
+          <div>
+            <span class="badge" style="margin-bottom: 10px;">Google Play Data Safety</span>
+            <h2>🗑️ Exclusão de Conta e Dados</h2>
+            <p>
+              Instruções passo a passo para excluir permanentemente sua conta Kipo e todos os seus Fichários, Divisórias e arquivos pelo aplicativo ou via solicitação web sem precisar reinstalar o app.
+            </p>
+          </div>
+          <a class="btn" href="./exclusao-de-conta/">Como Excluir Conta / Dados →</a>
+        </div>
+      </div>
+
+      <section class="highlights">
+        <h3>Resumo dos Compromissos de Privacidade do Kipo Android</h3>
+        <ul>
+          <li><strong>Zero Coleta de Localização:</strong> O pacote <code>app.kipo.android</code> remove explicitamente permissões de GPS/localização (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code> e <code>ACCESS_BACKGROUND_LOCATION</code>).</li>
+          <li><strong>Inteligência Artificial 100% Sob Demanda:</strong> Nenhum link, nota ou arquivo salvo é lido por modelos de IA automaticamente em segundo plano. A IA só é acionada quando você toca explicitamente em <em>"✨ Resumir com IA"</em> ou <em>"Síntese da Divisória"</em>.</li>
+          <li><strong>Higienização de Rastreadores:</strong> Ao capturar links via Share Sheet do Android, o Kipo remove parâmetros de rastreio (<code>utm_*</code>, <code>igsh</code>, <code>si</code>, <code>fbclid</code>).</li>
+          <li><strong>Cache Offline Somente Leitura:</strong> Seus Fichários sincronizados ficam disponíveis localmente no banco SQLite/Room do aparelho para consulta sem internet.</li>
+          <li><strong>Sem Venda de Dados ou Anúncios:</strong> O Kipo não exibe publicidade de terceiros e jamais vende ou compartilha dados pessoais com corretores de dados.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Kipo (martwilldev). Todos os direitos reservados.</span>
+      <span>
+        <a href="./privacidade/" style="color: inherit; margin-right: 12px;">Política de Privacidade</a>
+        <a href="./exclusao-de-conta/" style="color: inherit;">Exclusão de Conta</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
