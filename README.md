@@ -6,4 +6,5 @@ Portal público oficial de **Política de Privacidade**, **Segurança dos Dados 
 
 - **Central de Privacidade:** https://martwilldev.github.io/kipo-privacy/
 - **Política de Privacidade (Google Play / App Store):** https://martwilldev.github.io/kipo-privacy/privacidade/
+- **Termos de Serviço (Google Play / App Store):** https://martwilldev.github.io/kipo-privacy/termos/
 - **Exclusão de Conta e Dados (Data Safety):** https://martwilldev.github.io/kipo-privacy/exclusao-de-conta/
