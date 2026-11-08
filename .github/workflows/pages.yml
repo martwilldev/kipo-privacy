@@ -29,14 +29,16 @@ jobs:
 
       - name: Validate Public Compliance HTML Pages
         run: |
-          mkdir -p _site/privacidade _site/exclusao-de-conta
+          mkdir -p _site/privacidade _site/exclusao-de-conta _site/termos
           cp index.html _site/index.html
           cp privacidade/index.html _site/privacidade/index.html
           cp exclusao-de-conta/index.html _site/exclusao-de-conta/index.html
+          cp termos/index.html _site/termos/index.html
           touch _site/.nojekyll
           test -s "_site/index.html" || { echo "::error::Missing _site/index.html"; exit 1; }
           test -s "_site/privacidade/index.html" || { echo "::error::Missing _site/privacidade/index.html"; exit 1; }
           test -s "_site/exclusao-de-conta/index.html" || { echo "::error::Missing _site/exclusao-de-conta/index.html"; exit 1; }
+          test -s "_site/termos/index.html" || { echo "::error::Missing _site/termos/index.html"; exit 1; }
 
       - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
